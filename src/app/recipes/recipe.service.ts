@@ -7,8 +7,6 @@ import { ThrowStmt } from '@angular/compiler';
 @Injectable()
 export class RecipeService {
 
-    recipeSelected = new EventEmitter<Recipe>();
-
     recipes: Recipe[] = [
         new Recipe('Test recipe', 
         'This is simply a test', 
