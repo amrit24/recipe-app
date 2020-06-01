@@ -25,9 +25,12 @@ private igChangeSub: Subscription
      );
   }
 
+  onEditItem(index: number){
+    this.slService.startedEditing.next(index);
+  }
+
   ngOnDestroy(): void {
     this.igChangeSub.unsubscribe();
   }
-
 
 }
