@@ -6,11 +6,13 @@ import { ThrowStmt } from '@angular/compiler';
 import { Subject } from 'rxjs';
 
 @Injectable()
-export class RecipeService {
+export class 
+RecipeService {
 
   recipesChanged = new Subject<Recipe[]>();
 
-    recipes: Recipe[] = [
+   //Dummy Data
+   /**private recipes: Recipe[] = [
         new Recipe('Samosa recipe',
         'This is simply a test',
         'https://i.ytimg.com/vi/4ioJtDzQBT0/maxresdefault.jpg',
@@ -21,10 +23,17 @@ export class RecipeService {
         'https://img.grouponcdn.com/deal/jaSuZT7oxkai5XziRxWW/V3-4272x2823/v1/c700x420.jpg',
         [new Ingredient("Pizza bread", 2), new Ingredient("Pizza sauce", 1), new Ingredient("cheese",1)]
         )
-    ];
+    ];**/
+
+    private recipes: Recipe[] = [];
 
     constructor(private slService: ShoppingListService){}
 
+    setRecipes(recipes: Recipe[]){
+      this.recipes = recipes;
+      this.recipesChanged.next(this.recipes.slice());
+    }
+    
     getRecipes(){
        return this.recipes.slice();
     }
