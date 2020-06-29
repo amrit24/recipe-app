@@ -119,13 +119,13 @@ export class AuthService{
         switch (errorRes.error.error.message) {
             case 'EMAIL_EXISTS':
                 errorMessage = 'Email already exists'; 
-                console.log(errorRes.error.error.message) 
+                break;
             case 'EMAIL_NOT_FOUND':
-                errorMessage = 'Invalid email/Password'; 
-                console.log(errorRes.error.error.message) 
+                errorMessage = 'Account not found'; 
+                break;
             case 'INVALID_PASSWORD':
                 errorMessage = 'Invalid email/Password'; 
-                console.log(errorRes.error.error.message)                    
+                break;                  
         }
         return throwError(errorMessage);
     }
