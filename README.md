@@ -1,29 +1,78 @@
-# AngularBasic
+# Recipe App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+A basic Angular app for managing and discovering recipes.
 
-## Run ng build
+## Description
 
-## Development server
+This is a simple Angular application designed to help users browse, manage, and discover recipes with an intuitive user interface.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Technologies
 
-## Code scaffolding
+- **TypeScript** (74.4%)
+- **HTML** (19.3%)
+- **JavaScript** (3.5%)
+- **CSS** (2.8%)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Node.js and npm installed
+- Angular CLI installed globally
+```bash
+npm install -g @angular/cli
+```
 
-## Running unit tests
+### Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository
+```bash
+git clone https://github.com/amrit24/recipe-app.git
+cd recipe-app
+```
 
-## Running end-to-end tests
+2. Install dependencies
+```bash
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+3. Start the development server
+```bash
+ng serve
+```
 
-## Further help
+Navigate to `http://localhost:4200/` in your browser to see the application.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Development
+
+### Build
+
+To build the project for production:
+```bash
+ng build --prod
+```
+
+### Running Tests
+
+Run unit tests via Karma:
+```bash
+ng test
+```
+
+## Features
+
+- Browse recipes
+- Manage favorite recipes
+- [Add more features as you develop]
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+[Add your license information here]
+
+## Contact
+
+For questions or support, please open an issue in the repository.
